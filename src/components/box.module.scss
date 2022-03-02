@@ -1,0 +1,43 @@
+@import "./variables.scss";
+
+@mixin box {
+    font-size: 2em;
+    font-weight: bold;
+    width: $size;
+    height: $size;
+    border: 2px solid #555;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.correct {
+    @include box;
+    background-color: #4caf50;
+    border: 2px solid #4caf50;
+    color: #000;
+}
+
+.present {
+    @include box;
+    background-color: #e5f321;
+    border: 2px solid #e5f321;
+    color: #000;
+}
+
+.absent {
+    @include box;
+    background-color: #aaa;
+    border: 2px solid #aaa;
+    color: #000;
+}
+
+.edit {
+    @include box;
+    color:#000;
+}
+
+.empty {
+    @include box;
+}
